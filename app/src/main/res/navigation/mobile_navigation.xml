@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/showSpecialiteFragment">
+    <fragment
+        android:id="@+id/showSpecialiteFragment"
+        android:name="com.v01d.professormanager.ui.specialite.show.ShowSpecialiteFragment"
+        android:label="fragment_show_specialite"
+        tools:layout="@layout/fragment_show_specialite" >
+        <action
+            android:id="@+id/action_showSpecialiteFragment_to_updateSpecialiteFragment"
+            app:destination="@id/updateSpecialiteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createSpecialiteFragment"
+        android:name="com.v01d.professormanager.ui.specialite.create.CreateSpecialiteFragment"
+        android:label="fragment_create_specialite"
+        tools:layout="@layout/fragment_create_specialite" >
+        <action
+            android:id="@+id/action_createSpecialiteFragment_to_showSpecialiteFragment"
+            app:destination="@id/showSpecialiteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateSpecialiteFragment"
+        android:name="com.v01d.professormanager.ui.specialite.update.UpdateSpecialiteFragment"
+        android:label="fragment_update_specialite"
+        tools:layout="@layout/fragment_update_specialite" >
+        <argument
+            android:name="spec_id"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_updateSpecialiteFragment_to_showSpecialiteFragment"
+            app:destination="@id/showSpecialiteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/showProfessorFragment"
+        android:name="com.v01d.professormanager.ui.professor.show.ShowProfessorFragment"
+        android:label="fragment_show_professor"
+        tools:layout="@layout/fragment_show_professor" >
+        <action
+            android:id="@+id/action_showProfessorFragment_to_updateProfessorFragment"
+            app:destination="@id/updateProfessorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createProfessorFragment"
+        android:name="com.v01d.professormanager.ui.professor.create.CreateProfessorFragment"
+        android:label="fragment_create_professor"
+        tools:layout="@layout/fragment_create_professor" >
+        <action
+            android:id="@+id/action_createProfessorFragment_to_showProfessorFragment"
+            app:destination="@id/showProfessorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateProfessorFragment"
+        android:name="com.v01d.professormanager.ui.professor.update.UpdateProfessorFragment"
+        android:label="fragment_update_professor"
+        tools:layout="@layout/fragment_update_professor" >
+        <argument
+            android:name="profId"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_updateProfessorFragment_to_showProfessorFragment"
+            app:destination="@id/showProfessorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/showProfessorBySpecialiteFragment"
+        android:name="com.v01d.professormanager.ui.professor.bySpecialite.ShowProfessorBySpecialiteFragment"
+        android:label="fragment_show_professor_by_specialite"
+        tools:layout="@layout/fragment_show_professor_by_specialite" >
+        <action
+            android:id="@+id/action_showProfessorBySpecialiteFragment_to_updateProfessorFragment"
+            app:destination="@id/updateProfessorFragment" />
+    </fragment>
+</navigation>

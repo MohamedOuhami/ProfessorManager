@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ProfessorManager</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="show_specialites">Show Specialites</string>
+    <string name="create_specialites">Create Specialites</string>
+    <string name="show_professors">Show Professors</string>
+    <string name="create_professors">Create Professors</string>
+    <string name="employe_management">Employe Management</string>
+    <string name="professor_management">Professor Management</string>
+    <string name="create_professor">Create Professor</string>
+    <string name="specialite_management">Specialite Management</string>
+    <string name="show_professors_by_specialite">Show professors by Specialite</string>
+</resources>

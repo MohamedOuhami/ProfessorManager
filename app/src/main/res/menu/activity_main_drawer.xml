@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <item android:title="@string/professor_management">
+        <menu>
+
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/showProfessorFragment"
+                    android:title="@string/show_professors" />
+                <item
+                    android:id="@+id/showProfessorBySpecialiteFragment"
+                    android:title="@string/show_professors_by_specialite" />
+                <item
+                    android:id="@+id/createProfessorFragment"
+                    android:title="@string/create_professors" />
+            </group>
+        </menu>
+
+    </item>
+
+    <item android:title="@string/specialite_management">
+        <menu>
+
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/showSpecialiteFragment"
+                    android:title="@string/show_specialites" />
+                <item
+                    android:id="@+id/createSpecialiteFragment"
+                    android:title="@string/create_specialites" />
+            </group>
+        </menu>
+
+    </item>
+
+
+</menu>
